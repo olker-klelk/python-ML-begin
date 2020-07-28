@@ -1,3 +1,37 @@
+from pynput import keyboard
+import pyautogui as pag
+from pynput.mouse import Controller
+def on_press(key):
+    try:
+        print('alphanumeric key {0} pressed'.format(
+            key.char))
+    except AttributeError:
+        print('special key {0} pressed'.format(
+            key))
+
+def on_release(key):
+    try:
+        print('alphanumeric key {0} pressed'.format(
+            key.char))
+        if key.char=='`':
+            mouse = Controller()
+            cur_x, cur_y = pag.position()
+            pag.click(x=cur_x, y=cur_y, button='middle')
+    except AttributeError:
+        print('special key {0} pressed'.format(
+            key))
+    print('{0} released'.format(
+        key))
+    if key == keyboard.Key.esc:
+        # Stop listener
+        return False
+# Collect events until released
+with keyboard.Listener(
+        on_press=on_press,
+        on_release=on_release) as listener:
+    listener.join()
+
+'''
 import numpy as np
 import pyautogui as pag
 from pynput.keyboard import Key, Listener
@@ -24,7 +58,7 @@ with Listener(
         on_press=on_press,
         on_release=on_release) as listener:
     listener.join()
-'''
+
 
 from pynput.mouse import Controller
 mouse = Controller()
