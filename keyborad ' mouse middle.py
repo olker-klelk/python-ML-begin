@@ -1,6 +1,7 @@
 from pynput import keyboard
 import pyautogui as pag
 from pynput.mouse import Controller
+import time as tm
 def on_press(key):
     try:
         print('alphanumeric key {0} pressed'.format(
@@ -14,9 +15,10 @@ def on_release(key):
         print('alphanumeric key {0} pressed'.format(
             key.char))
         if key.char=='`':
+            tm.sleep(0.5)
             mouse = Controller()
             cur_x, cur_y = pag.position()
-            pag.click(x=cur_x, y=cur_y, button='middle')
+            pag.click(button='middle')
     except AttributeError:
         print('special key {0} pressed'.format(
             key))
