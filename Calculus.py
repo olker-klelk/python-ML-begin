@@ -40,5 +40,7 @@ founc()
 
 x = fsolve(founction_5, [0, 0, 0, 0, 0])
 print(x)
-
+x1 = np.array([2, 4, 2, 12, -8])
+y = np.array([2, -2, 1, -1, 2])
+print(x1*y)
 print("Program done!")
