@@ -1,9 +1,27 @@
+import pandas as pd
 import numpy as np
 from scipy.optimize import fsolve
 
+df = pd.read_csv(r"./803_LRdata.csv")
+x1 = np.array(df.x1.iloc[0:900])
+x2 = np.array(df.x2.iloc[0:900])
+x3 = np.array(df.x3.iloc[0:900])
+x4 = np.array(df.x4.iloc[0:900])
+x5 = np.array(df.x5.iloc[0:900])
+y1 = np.array(df.y1.iloc[0:900])
+y2 = np.array(df.y2.iloc[0:900])
+oy1 = np.array(df.y1.iloc[900:1000])
+oy2 = np.array(df.y2.iloc[900:100])
+x1_5=np.array(df.iloc[0:900,0:5])
+
+def martix_f1(A,B):
+
+    A_inv = np.linalg.inv(A)
+    ans = A_inv.dot(B)
+
+    return ans
 
 def founc():
-
     x1 = np.array([2, 4, 2, 12, -8])
     y = np.array([2, -2, 1, -1, 2])
     z = np.array([1, -2, 3, -2, -2])
@@ -23,9 +41,9 @@ def founc():
 
     print(inx)
     print("unknow!")
+    return inx
 
 def founction_5(unknow):
-
     x, y, z, a, b = unknow[0], unknow[1], unknow[2], unknow[3], unknow[4]
 
     f1 = x * 2 + 2 * y + z * 1 + a * -1 + b * -3 - 20
@@ -36,11 +54,10 @@ def founction_5(unknow):
 
     return [f1, f2, f3, f4, f5]
 
-founc()
+b = np.full((180, 5), 0,dtype=float)
+for i in range(0, 900, 5):
+     a = (martix_f1(x1_5[i: i+5], y1[i: i+5]))
+     b[int(i/5)] = a;
 
-x = fsolve(founction_5, [0, 0, 0, 0, 0])
-print(x)
-x1 = np.array([2, 4, 2, 12, -8])
-y = np.array([2, -2, 1, -1, 2])
-print(x1*y)
+print(b)
 print("Program done!")
