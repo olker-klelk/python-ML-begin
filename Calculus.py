@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from scipy.optimize import fsolve
-
+import statsmodels.api as sm
 df = pd.read_csv(r"./803_LRdata.csv")
 x1 = np.array(df.x1.iloc[0:900])
 x2 = np.array(df.x2.iloc[0:900])
@@ -13,10 +13,10 @@ y2 = np.array(df.y2.iloc[0:900])
 oy1 = np.array(df.y1.iloc[900:1000])
 oy2 = np.array(df.y2.iloc[900:100])
 x1_5=np.array(df.iloc[0:900,0:5])
-
 def martix_f1(A,B):
 
     A_inv = np.linalg.inv(A)
+    print(A_inv)
     ans = A_inv.dot(B)
 
     return ans
@@ -53,7 +53,15 @@ def founction_5(unknow):
     f5 = x * -8 + 2 * y + z * -2 + a * 2 + 2 * b + 8
 
     return [f1, f2, f3, f4, f5]
-
+x=np.array([[2, 2, 1],[4, -2, -2],[2, 1, 3]])
+y=np.array([20, -1, 35])
+print(np.linalg.det(x))
+print(martix_f1(x,y))
+X = sm.add_constant(x1_5)
+print(X)
+h=1
+print('h%s'% (h + 1))
+'''
 b = np.full((180, 5), 0,dtype=float)
 for i in range(0, 900, 5):
      a = (martix_f1(x1_5[i: i+5], y1[i: i+5]))
@@ -61,3 +69,4 @@ for i in range(0, 900, 5):
 
 print(b)
 print("Program done!")
+'''
