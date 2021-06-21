@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e685e055-53d1-49f1-baf4-a740ab474fae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/miscellaneous.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Calculus.py" beforeDir="false" afterPath="$PROJECT_DIR$/Calculus.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Linear_Regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Linear_Regression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frist mnist train.py" beforeDir="false" afterPath="$PROJECT_DIR$/frist mnist train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miscellaneous.py" beforeDir="false" afterPath="$PROJECT_DIR$/miscellaneous.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +41,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ML_python_conda" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -50,7 +50,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.Linear_Regression">
+  <component name="RunManager" selected="Python.oit_finalexam">
     <configuration name="Calculus" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-ML-begin" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -117,7 +117,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="capture human" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="frist mnist train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-ML-begin" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -130,7 +130,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/capture human.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/frist mnist train.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -161,12 +161,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="oit_finalexam" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python-ML-begin" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/oit_finalexam.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.oit_finalexam" />
+        <item itemvalue="Python.frist mnist train" />
         <item itemvalue="Python.miscellaneous" />
         <item itemvalue="Python.Calculus" />
         <item itemvalue="Python.LR_test" />
-        <item itemvalue="Python.capture human" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +220,17 @@
       <workItem from="1615628120921" duration="7678000" />
       <workItem from="1615635930625" duration="114000" />
       <workItem from="1615636128821" duration="3956000" />
-      <workItem from="1615690028317" duration="1460000" />
+      <workItem from="1615690028317" duration="4590000" />
+      <workItem from="1615762823192" duration="224000" />
+      <workItem from="1615827050413" duration="100000" />
+      <workItem from="1616257272702" duration="4616000" />
+      <workItem from="1616270119696" duration="6000" />
+      <workItem from="1616848802134" duration="949000" />
+      <workItem from="1617299654049" duration="228000" />
+      <workItem from="1623717712884" duration="599000" />
+      <workItem from="1623810368960" duration="12000" />
+      <workItem from="1624149814303" duration="65000" />
+      <workItem from="1624254156383" duration="4153000" />
     </task>
     <servers />
   </component>
@@ -217,9 +250,11 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/python_ML_begin$Linear_Regression.coverage" NAME="Linear_Regression Coverage Results" MODIFIED="1615705353909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_ML_begin$Linear_Regression.coverage" NAME="Linear_Regression Coverage Results" MODIFIED="1617299850826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_ML_begin$LR_test.coverage" NAME="LR_test Coverage Results" MODIFIED="1615104929068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_ML_begin$oit_finalexam.coverage" NAME="oit_finalexam Coverage Results" MODIFIED="1624258410317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_ML_begin$capture_human.coverage" NAME="capture human Coverage Results" MODIFIED="1615003966134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_ML_begin$frist_mnist_train.coverage" NAME="frist mnist train Coverage Results" MODIFIED="1616264991248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_ML_begin$Calculus.coverage" NAME="Calculus Coverage Results" MODIFIED="1615628968221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_ML_begin$miscellaneous.coverage" NAME="miscellaneous Coverage Results" MODIFIED="1615638966714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
